@@ -1,0 +1,73 @@
+
+    <link rel="stylesheet" href="/stylesheets/works.css">
+
+
+
+    <!-- Works -->
+
+    <div class="works">
+        <div class="worksmain">
+            <div class="workshead">
+                <p>Works</p>
+            </div>
+
+            <div class="workitems">
+                <div class="row">
+
+                   {{#each works}}
+                    <div class="col-md-6 col-xl-4">
+                        <div class="workitem">
+                            <img src="http://localhost:1337{{this.attributes.image.data.attributes.formats.small.url}}">
+                            <div class="worktext">
+                                <h5>Services: {{this.attributes.services}} </h5>
+                                <h2>{{this.attributes.title}}</h2>
+                                <p>{{this.attributes.description}}</p>
+                                <h6><a href="/work/{{this.id}}">See the Project</a></h6>
+                            </div>
+                        </div>
+                    </div>
+{{/each}}
+
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+    <div class="footer footer2">
+        <div class="footermain">
+            <div class="footeritems">
+                <p>Barbaros Bulvarı,</p>
+                <p>Akdoğan Sk. No:1, 34353</p>
+                <p>Beşiktaş / İstanbul</p>
+            </div>
+            <div class="footeritems">
+                <p><a href="tel:+90 (212) 236 91 42">+90 (212) 236 91 42</a></p>
+                <p><a href="tel:+90 (212) 236 91 43">+90 (212) 236 91 43</a></p>
+                <p><a href="mailto:hello@cdi.com.tr">hello@cdi.com.tr</a></p>
+            </div>
+            <div class="footeritems footeritems2">
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Spotify</a></p>
+                <p><a href="#">Linkedin</a></p>
+                <p><a href="#">Behance</a></p>
+                <p><a href="#">Vimeo</a></p>
+            </div>
+            <div class="footeritems">
+                <p><a href="#">Imprint</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footeritems">
+                <p><a href="#">Language</a></p>
+                <p><a href="#">English</a></p>
+                <p><a href="#">Deutsch</a></p>
+                <p><a href="#">Turkish</a></p>
+            </div>
+        </div>
+    </div>

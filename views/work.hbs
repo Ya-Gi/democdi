@@ -1,0 +1,191 @@
+
+    <link rel="stylesheet" href="/stylesheets/samplework.css">
+
+
+    <!-- Main Header -->
+{{#if work.attributes.image.data.attributes.large.url}}
+    <div class="d-none d-sm-block mainhead" style="height: 60vh; background: url('http://localhost:1337{{work.attributes.image.data.attributes.formats.large.url}}') no-repeat;background-size: 100%;background-attachment: fixed;">
+
+       
+    </div>
+
+      <div class="d-block d-sm-none mainhead" style="height: 35vh; background: url('http://localhost:1337{{work.attributes.image.data.attributes.formats.large.url}}') no-repeat;background-size: 100%;background-attachment: scroll;">
+
+       
+    </div>
+    {{else}}
+
+<div class="d-none d-sm-block mainhead" style="height: 60vh; background: url('http://localhost:1337{{work.attributes.image.data.attributes.url}}') no-repeat;background-size: 100%;background-attachment: fixed;">
+
+       
+    </div>
+
+      <div class="d-block d-sm-none mainhead" style="height: 35vh; background: url('http://localhost:1337{{work.attributes.image.data.attributes.url}}') no-repeat;background-size: 100%;background-attachment: scroll;">
+
+       
+    </div>
+
+    {{/if}}
+     <div style="margin-top: -61vh;" class="mainheaditems ">
+
+            
+
+            <div class="serviceprovide">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="serviceprovides">
+                            <h2>{{work.attributes.title}}</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="serviceprovides">
+                            <h3>Services Provided</h3>
+                            <p>{{work.attributes.services}}</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="serviceprovides">
+                            <h3>Spec</h3>
+                            <div class="specs">
+                                <h4>Client:</h4>
+                                <h4>{{work.attributes.spec.data.attributes.Client}}</h4>
+                            </div>
+                            <div class="specs">
+                                <h4>Year:</h4>
+                                <h4>{{work.attributes.spec.data.attributes.Year}}</h4>
+                            </div>
+                            <div class="specs">
+                                <h4>Industry:</h4>
+                                <h4>{{work.attributes.spec.data.attributes.Industry}}</h4>
+                            </div>
+                            <div class="specs">
+                                <h4>Region:</h4>
+                                <h4>{{work.attributes.spec.data.attributes.Region}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    <!-- Objective -->
+
+    <div class="objectivediv">
+        <div class="objectivedivmain">
+
+            <!-- One Two Three -->
+            <div class="lines">
+                <div class="line1">
+                    <div class="line2">
+                        <div class="line3">
+                            <hr>
+                            <div class="one numbers">
+                                <p>1</p>
+                            </div>
+                            <div class="two numbers">
+                                <p>2</p>
+                            </div>
+                            <div class="three numbers">
+                                <p>3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xl-4">
+                    <div class="objectiveitem">
+                        <h2>Objective</h2>
+                        <p>{{work.attributes.Objective}}</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-4">
+                    <div class="objectiveitem">
+                        <h2>Approach</h2>
+                        <p>{{work.attributes.Approach}}</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-4">
+                    <div class="objectiveitem">
+                        <h2>Solution</h2>
+                        <p>{{work.attributes.Solution}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<style>
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+    .box{
+        width: 250px;        
+        border: 5px solid black;
+    }    
+    .box.large{
+        height: 300px;
+    }
+    .box.small{
+        height: 100px;
+    }
+</style>
+
+    <div class="box.small container">
+<md-block>
+    {{work.attributes.Content}}
+</md-block>
+</div>
+    
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <div class="footer footer2">
+        <div class="footermain">
+            <div class="footeritems">
+                <p>Barbaros Bulvarı,</p>
+                <p>Akdoğan Sk. No:1, 34353</p>
+                <p>Beşiktaş / İstanbul</p>
+            </div>
+            <div class="footeritems">
+                <p><a href="tel:+90 (212) 236 91 42">+90 (212) 236 91 42</a></p>
+                <p><a href="tel:+90 (212) 236 91 43">+90 (212) 236 91 43</a></p>
+                <p><a href="mailto:hello@cdi.com.tr">hello@cdi.com.tr</a></p>
+            </div>
+            <div class="footeritems footeritems2">
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Spotify</a></p>
+                <p><a href="#">Linkedin</a></p>
+                <p><a href="#">Behance</a></p>
+                <p><a href="#">Vimeo</a></p>
+            </div>
+            <div class="footeritems">
+                <p><a href="#">Imprint</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footeritems">
+                <p><a href="#">Language</a></p>
+                <p><a href="#">English</a></p>
+                <p><a href="#">Deutsch</a></p>
+                <p><a href="#">Turkish</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+   
